@@ -3,17 +3,26 @@
 <style>
 body {
 margin-top: 22%;
-margin-left:45%;
+margin-left:5%;
+font-family: Arial, sans-serif;
+	background-color: #5526b9;
+	color: white;
 }
+#b {
+background-color: #5526b9;
+padding: 10px;
+border: 1px solid white;
+border-radius: 10px;
+}	
 </style>
 <script>
 countIt();
 
 function countIt() {
   year = 2022;
-  month = 2;
-  day = 17;
-  hours = 10;
+  month = 02;
+  day = -3;
+  hours = 0;
   minutes = 00;
   seconds = 00;
 
@@ -43,7 +52,7 @@ function countIt() {
 }
 
 function startCount(days, hours, minutes, seconds) {
-  document.getElementById("counter").innerHTML = "<b>" + days + " days</b> " + hours + ":" + minutes + ":" + seconds;
+  document.getElementById("counter").innerHTML = "<b id=b>" + days + "</b> days <b id=b>" + hours + "</b> hours <b id=b>" + minutes + "</b> minutes <b id=b>" + seconds+"</b> seconds ";
   countIt();
 }
 </script>
