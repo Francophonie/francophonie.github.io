@@ -6,13 +6,17 @@
 <title>Francophonie</title>
 <style>
 body {
-margin-top: 25%;
-margin-left:22%;
+margin-top: 10%;
+margin-left:10%;
 font-family: 'Poppins', sans-serif;
 background-color: white;
 color: black;
 font-size: 40px;
-}	
+}
+#text {
+font-size: 10px;
+font-family: Arial, sans-serif;
+}
 </style>
 <script>
 countIt();
@@ -51,11 +55,9 @@ function countIt() {
 }
 
 function startCount(days, hours, minutes, seconds) {
-  document.getElementById("counter").innerHTML = "" + days + ":" + hours + ":" + minutes + ":" + seconds;
+  document.getElementById("counter").innerHTML = "" + days + "<div id=text> days</div>" + hours + "<div id=text> hours</div>" + minutes + "<div id=text> minutes</div>" + seconds+"<div id=text> seconds</div> ";
   countIt();
 }
 </script>
 <div id="counter"></div>
-<div style="font-size: 10px; font-family: Arial, sans-serif;">&nbsp;&nbsp;days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hours &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minutes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; seconds
-</div>
 </html>
