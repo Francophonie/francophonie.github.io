@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<title>Francophonie</title>
 <style>
 body {
-margin-top: 22%;
-margin-left:5%;
-font-family: Arial, sans-serif;
-	background-color: #5526b9;
-	color: white;
-}
-#b {
-background-color: #5526b9;
-padding: 10px;
-border: 1px solid white;
-border-radius: 10px;
+margin-top: 25%;
+margin-left:22%;
+font-family: 'Poppins', sans-serif;
+background-color: white;
+color: black;
+font-size: 40px;
 }	
 </style>
 <script>
@@ -52,9 +51,11 @@ function countIt() {
 }
 
 function startCount(days, hours, minutes, seconds) {
-  document.getElementById("counter").innerHTML = "<b id=b>" + days + "</b> days <b id=b>" + hours + "</b> hours <b id=b>" + minutes + "</b> minutes <b id=b>" + seconds+"</b> seconds ";
+  document.getElementById("counter").innerHTML = "" + days + ":" + hours + ":" + minutes + ":" + seconds;
   countIt();
 }
 </script>
 <div id="counter"></div>
+<div style="font-size: 10px; font-family: Arial, sans-serif;">&nbsp;&nbsp;days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hours &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minutes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; seconds
+</div>
 </html>
